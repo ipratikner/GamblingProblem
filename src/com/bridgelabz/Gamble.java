@@ -1,15 +1,24 @@
 package com.bridgelabz;
 
+import java.util.Random;
+
 public class Gamble {
-    int everydayStake=100;
-    int everyGameBet=1;
+    int everydayStake = 100;
+    int everyGameBet = 1;
 
-    public static void main(String[] args)
-    {
+    public void winLosse() {
+
+
+        Random r1 = new Random();
+        int check = r1.nextInt(2);
+        if (check == 0) {
+            System.out.println("WIN");
+        } else
+            System.out.println("LOSE");
+    }
+
+    public static void main(String[] args) {
         Gamble g = new Gamble();
-
-        System.out.println("The user can start for the day is:"+g.everydayStake+"$");
-        System.out.println("Minimum amount user can bet every game is:"+g.everyGameBet+"$");
-
+        g.winLosse();
     }
 }
