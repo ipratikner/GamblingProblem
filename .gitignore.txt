@@ -1,0 +1,5 @@
+.idea/
+GamblingProblem.iml
+out/
+.gitignore
+        
